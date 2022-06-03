@@ -49,5 +49,5 @@ const port = 3000;
 app.get('/', (req, res) => res.send('welcome to event api '));
 
 app.listen(process.env.PORT || port, () =>
-    console.log(`server is running http://localhost:${port}`)
+    console.log(`serve is running http://localhost:${port}`)
 );
