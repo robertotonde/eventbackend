@@ -44,7 +44,10 @@ mongoose
         console.log(err);
     });
 
-//Server
-app.listen(3000, () => {
-    console.log('server is running http://localhost:3000');
-});
+const port = 3000;
+
+app.get('/', (req, res) => res.send('welcome to event api '));
+
+app.listen(process.env.PORT || port, () =>
+    console.log(`server is running http://localhost:${port}`)
+);
